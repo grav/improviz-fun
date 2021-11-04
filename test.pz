@@ -12,13 +12,14 @@ stroke(0, 0, 0)
 n = 10
 	
 loop n times with i
-	if ( 1 && do_beat)
-		fill(0, 0, i*20,127)
+	if ( 0 && do_beat)
+		fill(0, 0, i*20,127)	
 		move(i/5)
-	else
+	else	
 		move(i/5)
 		fill(i*20, 0, 0,127)
 	rotate(t)
-	
 	cube(0.5, 0.5, 0.5)
+
+
 
