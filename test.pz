@@ -1,0 +1,24 @@
+t = time/3
+tempo = 186
+m = 60/tempo
+d = 0.2
+do_beat = time % m < m*d
+
+if (0 && do_beat)
+	background(255)
+else
+	background((sin(t)+1)*100,(cos(t)+1)*100,(sin(t)+1*100))
+stroke(0, 0, 0)
+n = 10
+	
+loop n times with i
+	if ( 1 && do_beat)
+		fill(0, 0, i*20,127)
+		move(i/5)
+	else
+		move(i/5)
+		fill(i*20, 0, 0,127)
+	rotate(t)
+	
+	cube(0.5, 0.5, 0.5)
+
