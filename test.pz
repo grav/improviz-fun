@@ -1,9 +1,10 @@
 t = time/3
-tempo = 186
+tempo = 186 // bpm
 m = 60/tempo
 d = 0.2
 do_beat = time % m < m*d
 
+// change 0 => to enable
 if (0 && do_beat)
 	background(255)
 else
@@ -12,6 +13,7 @@ stroke(0, 0, 0)
 n = 10
 	
 loop n times with i
+	// change 0 => 1 to enable
 	if ( 0 && do_beat)
 		fill(0, 0, i*20,127)	
 		move(i/5)
